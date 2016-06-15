@@ -1,0 +1,172 @@
+a {
+text-transform : capitalize;
+font-size :26px;
+text-decoration : none;
+display : block;
+float : left;
+color : #ff0d0d;
+background-color : #95ff95;
+margin : 30px;
+}
+
+a:hover{
+color : white;
+background-color : #ff9f9f;
+}
+
+body{
+	
+	background-color : #f4f4ff;
+}
+
+.inp{
+background-color :#aaaaff;
+color : #800000;
+font-size : 15px;
+font-family :Georgia;
+font-weight : bold;
+width: 180px;
+height :40px
+}
+
+.btn{
+background-color :#0000ff;
+color : white;
+font-size : 18px;
+font-weight : bold;
+width: 250px;
+height :50px
+border radius : 120px;
+font-family :Georgia;
+}
+
+ td{
+ 
+	font-size : 18px;
+font-family :arial;
+font-weight : bold;
+	
+}
+
+.td1{
+	font-size : 22px;
+font-family :arial;
+font-weight : bold;
+	
+}
+
+
+.btn:hover{
+background-color :red;
+color : #000080;
+}
+
+h1{
+background-color :#0080ff;
+color : #ffffff;
+text-align: center;
+font-size : 28px;
+font-family :arial;
+font-weight : bold;
+}
+
+.f2{
+background-color :#000000;
+color :white;
+text-align: center;
+font-size : 18px;
+font-height : 30px;
+font-family :arial;
+height:30px;
+}
+
+.c1{
+background-color :#cacaca;
+color : black;
+font-size : 18px;
+font-family :arial;
+font-weight : bold;
+}
+
+ 
+ 
+ .tab{
+	background-color:#000000;
+	color:white;
+	font-size:16px;
+	font-family:Calibri;
+	width:50%;
+		
+}
+
+.tr{
+	background-color: #ffff00;
+	color:black;
+	font-size:15px;
+	font-family:Calibri;
+	font-style:bold;
+}
+
+.tr1{
+	background-color:#c6ffff;
+	color:black;
+	font-size:16px;
+	font-family:Calibri;
+	font-style:bold;
+}
+ 
+ .f3{
+background-color :#0000ff;
+color : black;
+text-align: center;
+font-size : 14px;
+font-family :arial;
+}
+
+.p{
+background-color :#d1d1d1;	
+color : #400040;
+font-size : 17px;
+font-family :arial;
+width:70%;
+}
+
+.p1{	
+color : #ff0000;
+font-size : 15px;
+font-family :arial;
+}
+
+
+.h2{
+background-color :#ff0000;
+color : #ffffff;
+text-align: center;
+font-size : 28px;
+font-family :arial;
+font-weight : bold;
+}
+
+.p2{
+background-color :#ff0000;	
+color : #ffffff;
+font-size : 17px;
+font-family :arial;
+width:70%;
+}
+
+.c2{
+background-color :#cacaca;
+color : black;
+font-size : 18px;
+font-family :arial;
+font-weight : bold;
+}
+	
+tr{
+	
+	color:#0071e1;
+	font-size:15px;
+	font-family:Calibri;
+	font-style:bold;
+}
