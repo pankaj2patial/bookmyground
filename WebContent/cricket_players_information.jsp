@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Cricket Player Information</title>
 </head>
-<body>
+<body> 
 
 <form action="information_cricket.jsp" method = "post">
 
@@ -26,7 +26,7 @@
 </tr>
 
 <tr>
-<td>Match</td>
+<td>match</td>
 <td> <input class = "c1" type = "text" name = "mt"></td>
 </tr>
 
