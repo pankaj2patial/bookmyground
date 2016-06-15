@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style3.css">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Team And Players list</title>
+</head>
+<body>
 <%@ page import = "java.sql.*" %>
 <%
   Connection con = null;
@@ -13,12 +21,11 @@
 	  stmt = con.createStatement();
 	  rs = stmt.executeQuery("select * from players");
 	  %>
-	<center>
-<font color = "dark green" size = "5"> Show All Players </font>
-</center>
+<marquee behavior = "alternate" bgcolor = #0080ff>
+<font color = white size = "7">Team with Players</font> </marquee>
 	<table border = "1"width = "80%" height = 50%>
 	<tr>
-	<td><b>Team Name</b></td>
+	<td ><b>Team Name</b></td>
 	<td><b>Players1</b></td>
 	<td><b>Players2 </b></td>
 	<td><b>Players3</b></td>
@@ -84,3 +91,7 @@ finally{
 		stmt.close();
 }
 %>
+
+
+</body>
+</html>

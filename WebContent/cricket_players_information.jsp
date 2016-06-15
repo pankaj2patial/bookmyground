@@ -26,7 +26,7 @@
 </tr>
 
 <tr>
-<td>match</td>
+<td>Match</td>
 <td> <input class = "c1" type = "text" name = "mt"></td>
 </tr>
 
