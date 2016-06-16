@@ -5,7 +5,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style3.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Playing Eleven Players</title>
+<title>Playing Eleven Cricket Players</title>
 </head>
 <body>
 <%@ page import = "java.sql.*" %>
@@ -23,7 +23,7 @@
 	  rs = stmt.executeQuery("select * from players where team_name='"+t1+"'");
 	  rs.next();
 	  %>
-	<center>
+	
 <marquee behavior = "alternate" bgcolor = #0080ff>
 <font color = white size = "7">Playing Players</font> </marquee>
 	<table border = "1"width = "80%" height = 50%>
