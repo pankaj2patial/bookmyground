@@ -10,8 +10,15 @@
 <body>
 <form action="hockey.jsp" method = post>
 
+<img src = "frontpage.png" width = "100%" height = "1%">
+
 <marquee behavior = "alternate" bgcolor="#0080ff">
 <font color = "white" size = "7">Team registration for Hockey</font></marquee>
+
+<a href="hockey_zone.jsp">Home</a>
+<a href="teamregistrationhockey.jsp">Team Registration</a>
+<a href="display_hockey_players.jsp">List All Teams</a>
+<a href="display_tournament.jsp">Tournament List</a>
 
 <table border = 1 width = "60%" >
 <tr>

@@ -11,8 +11,15 @@
 
 <form action="tennis.jsp" method = post>
 
+<img src = "frontpage.png" width = "100%" height = "1%">
+
 <marquee behavior = "alternate" bgcolor = #0080ff>
 <font color = white size = "7">Team Registration for Tennis</font></marquee>
+
+<a href="tennis_zone.jsp">Home</a>
+<a href="teamregistrationtennis.jsp">Team Registration</a>
+<a href="display_tennis_players.jsp">List All Teams</a>
+<a href="display_tournament.jsp">Tournament List</a>
 
 <table   width = "100%">
 

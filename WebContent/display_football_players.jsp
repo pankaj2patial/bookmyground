@@ -8,6 +8,14 @@
 <title>Football Players LIst</title>
 </head>
 <body>
+
+<img src = "frontpage.png" width = "100%" height = "1%">
+
+<a href="football_zone.jsp">Home</a>
+        <a href="teamregistrationfootball.jsp">Team Registration</a>
+       <a href="display_football_players.jsp">List All Teams</a>
+         <a href="display_tournament.jsp">Tournament List</a>
+
 <%@ page import = "java.sql.*" %>
  <%
  Connection con = null;
@@ -57,6 +65,8 @@ try
   while(rs.next())
 	{
 		%>
+		  
+		
 		<tr>
 		<td>
 			<a href="football11.jsp?t2=<%=rs.getString(1) %>"><%out.print(rs.getString(1));%></a></td>

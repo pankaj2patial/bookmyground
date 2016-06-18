@@ -15,6 +15,8 @@
 <a href="teamregistrationcricket.jsp">Team Registration</a>
 <a href="display_cricket_players.jsp">List All Teams</a>
 <a href="display_tournament.jsp">Tournament List</a>
+
+
 <%@ page import = "java.sql.*" %>
 <%
   Connection con = null;
@@ -53,6 +55,8 @@
 	while(rs.next())
 	{
 		%>
+		
+		
 		<tr>
 		<td>
 			<a href="cricket11.jsp?t1=<%=rs.getString(1) %>"><%out.print(rs.getString(1));%></a></td>
