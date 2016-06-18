@@ -24,7 +24,8 @@
 
 <tr>
 <td>Category</td>
-<td><select class = "inp" name = "dropdown">
+<td>
+<select class = "inp" name = "dropdown">
  <option value = "CRICKET">Cricket</option>
  <option value = "FOOTBALL">Football</option>
  <option value = "HOCKEY">Hockey</option>

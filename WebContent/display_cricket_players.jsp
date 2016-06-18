@@ -8,6 +8,13 @@
 <title>Team And Players list</title>
 </head>
 <body>
+
+<img src = "frontpage.png" width = "100%" height = "1%">
+
+<a href="cricketzone.jsp">Home</a>
+<a href="teamregistrationcricket.jsp">Team Registration</a>
+<a href="display_cricket_players.jsp">List All Teams</a>
+<a href="display_tournament.jsp">Tournament List</a>
 <%@ page import = "java.sql.*" %>
 <%
   Connection con = null;

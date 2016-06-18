@@ -11,8 +11,16 @@
 
  <form action = "cricket.jsp" method = post>
  
+ <img src = "frontpage.png" width = "100%" height = "1%">
+ 
  <marquee behavior = "alternate" bgcolor = #0080ff>
 <font color = white size = "7">Team Registration for Cricket</font> </marquee>
+
+<a href="cricketzone.jsp">Home</a>
+<a href="teamregistrationcricket.jsp">Team Registration</a>
+<a href="display_cricket_players.jsp">List All Teams</a>
+<a href="display_tournament.jsp">Tournament List</a>
+
  <table border = 1 width = "60%">
  <tr >
  <td class = "td1">Team Name</td>

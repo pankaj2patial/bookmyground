@@ -1,12 +1,12 @@
-a {
+a{
 text-transform : capitalize;
 font-size :26px;
 text-decoration : none;
 display : block;
 float : left;
-color : #ff0d0d;
-background-color : #95ff95;
-margin : 30px;
+color : #0080ff;
+background-color : white;
+margin : 20px;
 }
 
 a:hover{
