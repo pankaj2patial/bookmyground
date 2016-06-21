@@ -15,7 +15,7 @@
 <a href="hockey_zone.jsp">Home</a>
 <a href="teamregistrationhockey.jsp">Team Registration</a>
 <a href="display_hockey_players.jsp">List All Teams</a>
-<a href="display_tournament.jsp">Tournament List</a>
+<a href="display_tournament_hockey.jsp">Tournament List</a>
 <marquee direction="up"><a href="display_tournament.jsp">Tournament </a><br>
  
 

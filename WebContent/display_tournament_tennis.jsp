@@ -11,6 +11,11 @@
 
 <img src = "frontpage.png" width = "100%" height = "1%">
 
+<a href="tennis_zone.jsp">Home</a>
+<a href="teamregistrationtennis.jsp">Team Registration</a>
+<a href="display_tennis_players.jsp">List All Teams</a>
+<a href="display_tournament_tennis.jsp">Tournament List</a>
+
 
 <%@ page import = "java.sql.*" %>
 <%
@@ -23,7 +28,10 @@ try
 	  Class.forName("com.mysql.jdbc.Driver");
 	  con = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","root");
 	  stmt = con.createStatement();
-	  rs = stmt.executeQuery("select * from tournament");
+	  
+	  String TENNIS = "TENNIS";
+	  
+	  rs = stmt.executeQuery("select * from tournament where dropdown='"+TENNIS+"'");
 
 %>
 <marquee behavior = "alternate" bgcolor = #0080ff>
@@ -43,10 +51,6 @@ try
 	{
 	%>
 	
-	<a href="cricketzone.jsp">Cricket</a>
-<a href="football_zone.jsp">Football</a>
-<a href="tennis_zone.jsp">Tennis</a>
-<a href="hockey_zone.jsp">Hockey</a>	
 	<tr>
 	    <td><%out.print(rs.getString(1));%></td>
         <td><%out.print(rs.getString(2));%></td>

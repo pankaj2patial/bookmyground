@@ -19,7 +19,7 @@
 <a href="cricketzone.jsp">Home</a>
 <a href="teamregistrationcricket.jsp">Team Registration</a>
 <a href="display_cricket_players.jsp">List All Teams</a>
-<a href="display_tournament.jsp">Tournament List</a>
+<a href="display_tournament_cricket.jsp">Tournament List</a>
 
  <table border = 1 width = "60%">
  <tr >

@@ -14,7 +14,7 @@
 <a href="football_zone.jsp">Home</a>
         <a href="teamregistrationfootball.jsp">Team Registration</a>
        <a href="display_football_players.jsp">List All Teams</a>
-         <a href="display_tournament.jsp">Tournament List</a>
+         <a href="display_tournament_football.jsp">Tournament List</a>
 
 <%@ page import = "java.sql.*" %>
  <%
@@ -32,7 +32,7 @@ try
 %>
   <marquee behavior = "alternate" bgcolor = #0080ff>
 <font color = white size = "7">Team with Players</font> </marquee>
-	<table border = "1" width = "80%" height = 50%>
+	<table border = "1" width = "50%" height = 20%>
 	<tr>
 	<td ><b>Team Name</b></td>
 	<td><b>Players1</b></td>

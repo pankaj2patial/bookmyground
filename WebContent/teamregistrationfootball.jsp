@@ -20,7 +20,7 @@
 <a href="football_zone.jsp">Home</a>
 <a href="teamregistrationfootball.jsp">Team Registration</a>
 <a href="display_football_players.jsp">List All Teams</a>
-<a href="display_tournament.jsp">Tournament List</a>
+<a href="display_tournament_football.jsp">Tournament List</a>
 
 <table border = 1 width = "60%">
 <tr>

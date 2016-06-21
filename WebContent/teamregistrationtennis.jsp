@@ -19,7 +19,7 @@
 <a href="tennis_zone.jsp">Home</a>
 <a href="teamregistrationtennis.jsp">Team Registration</a>
 <a href="display_tennis_players.jsp">List All Teams</a>
-<a href="display_tournament.jsp">Tournament List</a>
+<a href="display_tournament_tennis.jsp">Tournament List</a>
 
 <table   width = "100%">
 

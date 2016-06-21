@@ -14,7 +14,7 @@
 <a href="hockey_zone.jsp">Home</a>
 <a href="teamregistrationhockey.jsp">Team Registration</a>
 <a href="display_hockey_players.jsp">List All Teams</a>
-<a href="display_tournament.jsp">Tournament List</a>
+<a href="display_tournament_hockey.jsp">Tournament List</a>
 
 <%@ page import = "java.sql.*" %>
  <%
@@ -58,8 +58,6 @@ try
   while(rs.next())
 	{
 		%>
-			
-		
 		<tr>
 		<td>
 			<a href="hockey11.jsp?t3=<%=rs.getString(1) %>"><%out.print(rs.getString(1));%></a></td>
