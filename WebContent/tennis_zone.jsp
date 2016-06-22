@@ -17,7 +17,7 @@
 <a href="teamregistrationtennis.jsp">Team Registration</a>
 <a href="display_tennis_players.jsp">List All Teams</a>
 <a href="display_tournament_tennis.jsp">Tournament List</a>
-<marquee direction="up"><a href="display_tournament.jsp">Tournament </a><br>
+<marquee direction="up"><a href="display_tournament_tennis.jsp">Tournament </a><br>
  
 
 

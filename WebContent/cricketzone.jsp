@@ -17,7 +17,8 @@
 <a href="teamregistrationcricket.jsp">Team Registration</a>
 <a href="display_cricket_players.jsp">List All Teams</a>
 <a href="display_tournament_cricket.jsp">Tournament List</a>
-<marquee direction="up"><a href="display_tournament.jsp">Tournament </a><br>
+
+<marquee direction="up"><a href="display_tournament_cricket.jsp">Tournament </a><br>
  
 
 
