@@ -40,9 +40,9 @@ border radius : 120px;
 font-family :Georgia;
 }
 
- td{
+td{
  
-	font-size : 18px;
+	font-size : 12px;
 font-family :arial;
 font-weight : bold;
 	
@@ -54,7 +54,6 @@ font-family :arial;
 font-weight : bold;
 	
 }
-
 
 .btn:hover{
 background-color :red;
@@ -102,7 +101,7 @@ font-weight : bold;
 .tr{
 	background-color: #ffff00;
 	color:black;
-	font-size:15px;
+	font-size:10px;
 	font-family:Calibri;
 	font-style:bold;
 }
@@ -116,10 +115,10 @@ font-weight : bold;
 }
  
  .f3{
-background-color :#0000ff;
+background-color :#5eaeff;
 color : black;
 text-align: center;
-font-size : 14px;
+font-size : 15px;
 font-family :arial;
 }
 
@@ -164,9 +163,8 @@ font-weight : bold;
 }
 	
 tr{
-	
 	color:#0071e1;
-	font-size:15px;
+	font-size:13px;
 	font-family:Calibri;
 	font-style:bold;
 }

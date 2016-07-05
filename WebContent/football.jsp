@@ -229,12 +229,11 @@ if(st25==null)
 </head>
 <body>
 
- <form action = "cricket.jsp" method = post>
  
  <marquee behavior = "alternate" bgcolor = #0080ff>
 <font color = white size = "7">Your Team Details Has Been Saved</font> </marquee>
 
-<table border = 1 width = "60%">
+<table border = 1 width = "100%"  height = "50%">
 <tr>
 <td class = "td1"> Team Name </td>
 <td><% out.print(team_name); %></td>

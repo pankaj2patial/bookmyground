@@ -32,9 +32,11 @@ try
 %>
   <marquee behavior = "alternate" bgcolor = #0080ff>
 <font color = white size = "7">Team with Players</font> </marquee>
-	<table border = "1" width = "50%" height = 20%>
+	
+	<table border = "1" width = "100%" height = "10%">
+	
 	<tr>
-	<td ><b>Team Name</b></td>
+	<td><b>Team Name</b></td>
 	<td><b>Players1</b></td>
 	<td><b>Players2 </b></td>
 	<td><b>Players3</b></td>

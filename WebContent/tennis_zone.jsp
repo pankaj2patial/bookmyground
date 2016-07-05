@@ -11,7 +11,7 @@
 <img src = "frontpage.png" width = "100%" height = "1%">
 
 <marquee behavior = "alternate" bgcolor = #0080ff>
-<font color = white size = "7">TENNIS Zone</font> </marquee>
+<font color = white size = "7">Tennis Zone</font> </marquee>
 
 <a href="tennis_zone.jsp">Home</a>
 <a href="teamregistrationtennis.jsp">Team Registration</a>

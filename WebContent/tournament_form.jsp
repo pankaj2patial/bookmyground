@@ -23,7 +23,7 @@
  </tr>
 
 <tr>
-<td>Category</td>
+<td class = "td1">Category</td>
 <td>
 <select class = "inp" name = "dropdown">
  <option value = "CRICKET">Cricket</option>

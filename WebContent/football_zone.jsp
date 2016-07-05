@@ -11,7 +11,7 @@
 <img src = "frontpage.png" width = "100%" height = "1%">
 
 <marquee behavior = "alternate" bgcolor = #0080ff>
-<font color = white size = "7">FOOTBALL Zone</font> </marquee>
+<font color = white size = "7">Football Zone</font> </marquee>
 
 <a href="football_zone.jsp">Home</a>
 <a href="teamregistrationfootball.jsp">Team Registration</a>

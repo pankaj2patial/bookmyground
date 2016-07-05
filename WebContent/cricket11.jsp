@@ -19,14 +19,13 @@
 	  Class.forName("com.mysql.jdbc.Driver");
 	  con = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","root");
 	  stmt = con.createStatement();
-	  out.print(t1);
 	  rs = stmt.executeQuery("select * from players where team_name='"+t1+"'");
 	  rs.next();
 	  %>
-	
+	<a href="cricketzone.jsp">Home</a>
 <marquee behavior = "alternate" bgcolor = #0080ff>
 <font color = white size = "7">Playing Players</font> </marquee>
-	<table border = "1"width = "80%" height = 50%>
+	<table border = "1"width = "100%" height = 50%>
 	<tr>
 	<td ><b>Team Name</b></td>
 	<td><b>Players1</b></td>

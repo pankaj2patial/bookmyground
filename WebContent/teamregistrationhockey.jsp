@@ -20,7 +20,7 @@
 <a href="display_hockey_players.jsp">List All Teams</a>
 <a href="display_tournament_hockey.jsp">Tournament List</a>
 
-<table border = 1 width = "60%" >
+<table border = 1 width = "100%" >
 <tr>
 <td class = "td1">Team Name </td>
 <td> <input class = "inp" type = "text" name = "team_name"></td>

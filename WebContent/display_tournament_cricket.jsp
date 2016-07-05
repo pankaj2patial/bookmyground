@@ -28,7 +28,7 @@ try
 	  con = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","root");
 	  stmt = con.createStatement();
 	  
-	  String CRICKET = " CRICKET ";
+	  String CRICKET = "CRICKET";
 	  
 	  rs = stmt.executeQuery("select * from tournament where dropdown='"+CRICKET+"'");
 

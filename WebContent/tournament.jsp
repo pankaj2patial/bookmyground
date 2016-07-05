@@ -23,10 +23,7 @@
 	
 	  String q = "insert into tournament values('"+tournament_name+"','"+dropdown+"','"+team_a+"','"+team_b+"','"+d_ate+"','"+t_ime+"')";
         
-	stmt.executeUpdate(q);
-
-	  
-	  
+	stmt.executeUpdate(q);	  
   
   }
   catch(ClassNotFoundException cnfe)
@@ -66,11 +63,11 @@
  <table width = "50%">
  <tr>
  <td class = "td1">Tournament Name </td>
- <td><%out.print(tournament_name); %></td></td>
+ <td><% out.print(tournament_name); %></td></td>
  </tr>
 
 <tr>
-<td>Category</td>
+<td class = "td1">Category</td>
 <td><%out.print(dropdown); %></td>
  </tr>
  

@@ -31,7 +31,7 @@
 	  %>
 <marquee behavior = "alternate" bgcolor = #0080ff>
 <font color = white size = "7">Team with Players</font> </marquee>
-	<table border = "1"width = "80%" height = 50%>
+	<table border = "1"width = "100%" height = 50%>
 	<tr>
 	<td ><b>SINGLES</b></td>
 	<td><b>DOUBLES 1</b></td>

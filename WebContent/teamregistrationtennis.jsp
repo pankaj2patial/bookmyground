@@ -21,7 +21,7 @@
 <a href="display_tennis_players.jsp">List All Teams</a>
 <a href="display_tournament_tennis.jsp">Tournament List</a>
 
-<table   width = "100%">
+<table  border = "1"  width = "100%">
 
 <tr> <caption> <h1>Singles</h1> </caption>
 </tr>
@@ -31,7 +31,7 @@
 </tr>
 </table>
 
-<table   width = "100%">
+<table border = "1"  width = "100%">
 
 <tr> <caption> <h1>Doubles</h1> </caption>
 </tr>

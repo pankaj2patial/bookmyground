@@ -28,10 +28,11 @@
     	rs = stmt.executeQuery("select * from hockey_players where team_name = '"+t3+"' ");
     	rs.next();
     	
-    	%> 	
+    	%> 
+    	<a href="hockey_zone.jsp">Home</a>	
    <marquee behavior = "alternate" bgcolor = #0080ff>
 <font color = white size = "7">Playing Players</font> </marquee>
-	<table border = "1"width = "80%" height = 50%> 
+	<table border = "1"width = "100%" height = 50%> 
   <tr>
 	<td ><b>Team Name</b></td>
 	<td><b>Players1</b></td>
