@@ -17,11 +17,11 @@
 <a href="teamregistrationfootball.jsp">Team Registration</a>
 <a href="display_football_players.jsp">List All Teams</a>
 <a href="display_tournament_football.jsp">Tournament List</a>
-<marquee direction="up"><a href="display_tournament_football.jsp">Tournament </a><br>
+
  
 
 
-</marquee>
+
 
 </body>
 </html>

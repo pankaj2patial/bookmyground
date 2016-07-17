@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<link rel = "stylesheet" type = "text/css" href = "style3.css">
+<link rel = "stylesheet" type = "text/css" href = "Style1.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Score Display</title>
 </head>
@@ -54,14 +54,14 @@
 	%>
 	<table border = "1"width = "100%" height = 50%>
 	<tr class = "h1">
-	<td><b>Team Name</b></td>
-	<td><b>Total Score</b></td>
-	<td><b>Overs </b></td>
-	<td><b>Extra</b></td>
-	<td><b>WICKETS</b></td>
-	<td><b>Batting Team</b></td>
-	<td><b>Bowling Runs</b></td>
-	<td><b>Overs</b></td>
+	<th><b>Team Name</b></th>
+	<th><b>Total Score</b></th>
+	<th><b>Overs </b></th>
+	<th><b>Extra</b></th>
+	<th><b>WICKETS</b></th>
+	<th><b>Batting Team</b></th>
+	<th><b>Bowling Runs</b></th>
+	<th><b>Overs</b></th>
 
 	</tr>
 	<%
@@ -72,19 +72,19 @@
 	
 	%>
 	<tr>
-	<td ><%  out.print((rs.getString("tt"))); %></td>
+	<td nowrap><%  out.print((rs.getString("tt"))); %></td>
 	<%
 	b = "SELECT SUM(RUN) as total from t1_score";
 	rs=stmt.executeQuery(b);
 	rs.next();
 	%>
-	<td ><% out.print(rs.getInt("total"));%></td>
+	<td nowrap ><% out.print(rs.getInt("total"));%></td>
 	<%
 	c = "SELECT  count(*) as over from t1_score where cat NOT IN('NO_BALL','WIDE','NO+RUNS','WIDE+BYES') ";
 	rs=stmt.executeQuery(c);
 	rs.next();
 	%>
-	<td ><% out.print(rs.getDouble("over")/6);%></td>
+	<td nowrap ><% out.print(rs.getDouble("over")/6);%></td>
 	<%
 	
 	d = "select  sum(RUN) AS extra from t1_score where cat NOT IN('DOT_BALL','WICKET','RUNS')";
@@ -92,7 +92,6 @@
 	 rs.next();
 	 %>
 	<td ><% out.print(rs.getInt("extra"));%></td>
-	</tr>
 	<%
 
 	e = "Select dropdown1 as p1,count(*) as wickets from t1_score where cat = 'WICKET' group by dropdown1";
@@ -100,9 +99,8 @@
 	while(rs.next())
 	{
 	    %>
-	    <tr>
-	<td "><% out.print(rs.getString("p1")); %></td>
-	<td ><% out.print(rs.getInt("wickets")); %></td>
+	<td nowrap><% out.print(rs.getString("p1")); %></td>
+	<td nowrap><% out.print(rs.getInt("wickets")); %></td>
 		<%
 	}
 
@@ -111,8 +109,8 @@
 	 while(rs.next())
 	{
 	%>
-	<td class = "td1"><% out.print(rs.getString("p1")); %></td>
-	<td class = "c2"><% out.print(rs.getString("s")); %></td>
+	<td nowrap><% out.print(rs.getString("p1")); %></td>
+	<td nowrap><% out.print(rs.getString("s")); %></td>
 		<%
 	}
 	g = "SELECT dropdown2 as b1,SUM(RUN) as s from t1_score where cat NOT IN('BYE','LEGBYE') GROUP BY DROPDOWN2";
@@ -121,8 +119,8 @@
 	{
 	%>
 
-	<td class = "td1"><% out.print(rs.getString("b1")); %></td>
-	<td class = "c2"><% out.print(rs.getString("s")); %></td>
+	<td nowrap><% out.print(rs.getString("b1")); %></td>
+	<td nowrap><% out.print(rs.getString("s")); %></td>
 			<%
 	}
 	h = "select dropdown2 as b1,count(*)/6 as s from t1_score where cat NOT  IN('WIDE','NO+RUNS','NO+RUNS','WIDE+BYES','No_BALL') GROUP BY DROPDOWN2";
@@ -130,8 +128,8 @@
 	  while(rs.next())
 		{
 	  %>
-	<td class = "td1"><% out.print(rs.getString("b1")); %></td>
-	<td class = "c2"><% out.print(rs.getDouble("s")); %></td>
+	<td nowrap><% out.print(rs.getString("b1")); %></td>
+	<td nowrap><% out.print(rs.getDouble("s")); %></td>
 		</tr>
 			<%		
 	}

@@ -1,58 +1,42 @@
-a{
+a {
 text-transform : capitalize;
-font-size :20px;
+font-size :26px;
 text-decoration : none;
 display : block;
 float : left;
-color : #59acff;
-background-color : #f4f4ff;
+color : #ffffff;
+background-color : #93ff93;
 margin : 20px;
 }
 
 a:hover{
-color : #0065ca;
-background-color : #f4f4ff;
+color : white;
+background-color : #22ff22;
+opacity : .9;
 }
-
 body{
 	
-	background-color : #f4f4ff;
+	background-color : #b7ffb7;
 }
-
 .inp{
-background-color :#9191ff;
-color : #ffffff;
+background-color :#b3b3ff;
+color : #F4F6F7;
 font-size : 14px;
 font-family :Georgia;
 font-weight : bold;
-width: 150px;
-height :20px
+width: 250px;
+height :50px
 }
 
 .btn{
-background-color :#0000ff;
+background-color :#808000;
 color : white;
-font-size : 16px;
+font-size : 18px;
 font-weight : bold;
 width: 250px;
 height :50px
 border radius : 120px;
 font-family :Georgia;
-}
-
-td{
- 
-	font-size : 12px;
-font-family :arial;
-font-weight : bold;
-	
-}
-
-.td1{
-	font-size : 22px;
-font-family :arial;
-font-weight : bold;
-	
 }
 
 .btn:hover{
@@ -61,7 +45,7 @@ color : #000080;
 }
 
 h1{
-background-color :#0080ff;
+background-color :#ff0000;
 color : #ffffff;
 text-align: center;
 font-size : 28px;
@@ -87,7 +71,11 @@ font-family :arial;
 font-weight : bold;
 }
 
- 
+ td{
+	background-color :#ffff3c;
+	color : black;
+	font-size : 16px;
+ }
  
  .tab{
 	background-color:#000000;
@@ -101,7 +89,7 @@ font-weight : bold;
 .tr{
 	background-color: #ffff00;
 	color:black;
-	font-size:10px;
+	font-size:15px;
 	font-family:Calibri;
 	font-style:bold;
 }
@@ -115,10 +103,10 @@ font-weight : bold;
 }
  
  .f3{
-background-color :#7dbeff;
+background-color :#0000ff;
 color : black;
 text-align: center;
-font-size : 13px;
+font-size : 14px;
 font-family :arial;
 }
 
@@ -154,17 +142,17 @@ font-family :arial;
 width:70%;
 }
 
-.c2{
-background-color :#cacaca;
-color : black;
-font-size : 18px;
-font-family :arial;
-font-weight : bold;
-}
-	
 tr{
-	color:#0071e1;
+	color:#00d76b;
 	font-size:13px;
 	font-family:Calibri;
 	font-style:bold;
 }
+
+th{
+	color:#1a1a1a;
+	font-size:13px;
+	font-family:Calibri;
+	font-style:bold;
+}
+	

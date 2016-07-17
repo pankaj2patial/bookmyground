@@ -3,24 +3,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style3.css">
+<link rel="stylesheet" type="text/css" href="Style1.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Cricket Zone</title>
 </head>
 <body>
-<img src = "cricket.jpg" width = "100%" height = "200px" >
 
-<marquee behavior = "alternate" bgcolor = #0080ff>
+<marquee behavior = "alternate" bgcolor = #00c131>
 <font color = white size = "7">Cricket Zone</font> </marquee>
+
+
+<img src = "cricket.jpg" width = "100%" height = "200px" >
 
 <a href="cricketzone.jsp">Home</a>
 <a href="teamregistrationcricket.jsp">Team Registration</a>
 <a href="display_cricket_players.jsp">List All Teams</a>
 <a href="display_tournament_cricket.jsp">Tournament List</a>
+
 <table border = "1" width = "50%">
  <img src = "score.jpg" width = "500px" height = "300px" align = "right">
 <tr>
-<td>live Score</a></td>
+<td>live Score</td>
 </tr>
 <%@page import = "java.sql.*" %>
 <%@page import = "java.util.*" %>
@@ -47,7 +50,7 @@
 		    
 		c = "SELECT  count(*) as over from t1_score where cat NOT IN('NO_BALL','WIDE','NO+RUNS','WIDE+BYES') ";
 		
-		e = "SELECT dropdown1 as p1, count(*) as wickets from t1_score WHERE cat='WICKET' ";	 
+		e = "SELECT count(*) as wickets from t1_score WHERE cat='WICKET' ";	 
 		
 	rs=stmt.executeQuery(a);
 	rs=stmt.executeQuery(b);
@@ -57,11 +60,11 @@
 	
 	%>
 	<table border = "1"width = "50%" height = 50%>
-	<tr class = "h1">
-	<td><b>Team Name</b></td>
-	<td><b>Total Score</b></td>
-	<td><b>Overs </b></td>
-	<td><b>WICKETS</b></td>
+	<tr>
+	<th><b>Team Name</b></th>
+	<th><b>Total Score</b></th>
+	<th><b>Overs </b></th>
+	<th><b>WICKETS</b></th>
 	</tr>
 	<%
 	a = "select team_name as tt from players where team_name = 'PANKAJ'";
@@ -71,19 +74,19 @@
 	
 	%>
 	<tr>
-	<td ><%  out.print((rs.getString("tt"))); %></td>
+	<td nowrap ><%  out.print((rs.getString("tt"))); %></td>
 	<%
 	b = "SELECT SUM(RUN) as total from t1_score";
 	rs=stmt.executeQuery(b);
 	rs.next();
 	%>
-	<td ><% out.print(rs.getInt("total"));%></td>
+	<td><% out.print(rs.getInt("total"));%></td>
 	<%
 	c = "SELECT  count(*) as over from t1_score where cat NOT IN('NO_BALL','WIDE','NO+RUNS','WIDE+BYES') ";
 	rs=stmt.executeQuery(c);
 	rs.next();
 	%>
-	<td ><% out.print(rs.getDouble("over")/6);%></td>
+	<td><% out.print(rs.getDouble("over")/6);%></td>
 	<%
 
 	e = "Select dropdown1 as p1,count(*) as wickets from t1_score where cat = 'WICKET'";

@@ -6,10 +6,10 @@
 <link rel = "stylesheet" type = "text/css" href = "style3.css">
 </head>
 <body>
- <marquee behavior = "alternate" bgcolor =#0080ff>
+ <marquee behavior = "alternate" bgcolor = #0080ff>
 <font color = white size = "7">Cricket Score Bored</font>
 </marquee>
-<img  src="score.jpg" width = "500px" height = "900px" align = "left">
+<img  src="score.jpg" width = "500px" height = "600px" align = "left">
 <%@page import = "java.sql.*" %>
 <%@page import = "java.util.*" %>
   <%
@@ -55,8 +55,8 @@
 	rs.next();
 	%>
 	<tr>
-	<td class = "f3">Overs</td>
-	<td class = "inp"><% out.print(rs.getDouble("over")/6);%></td>
+	<td class = "f3">Total Overs</td>
+	<td class = "inp"><%out.print(String.format("%.1f", rs.getDouble("over")/6));%></td>
 	</tr>
 	<%
 	
@@ -64,29 +64,29 @@
 	 rs = stmt.executeQuery(q);
 	 rs.next();
 	 %>
-		<tr>
-		<td class = "f3">Extra</td>
+		<tr> 
+		<td class = "f3">Total Extra</td>
 		<td class = "inp"><% out.print(rs.getInt("extra"));%></td>
 		</tr>
 		<%
-
-	q = "Select dropdown1 as p1,count(*) as wickets from t1_score where cat = 'WICKET' group by dropdown1";
-	rs = stmt.executeQuery(q);
-	%>
-	<tr>
-	<td class = "p1">WICKETS</td>
-	</tr>
-	<%
-	while(rs.next())
-	{
-	    %>
+		
+	q = "select distinct dropdown1 as strike from t1_score where dropdown1 NOT IN(Select dropdown1  from t1_score where cat = 'WICKET')";	
+		rs = stmt.executeQuery(q);
+		%>
 		<tr>
-		<td class = "f3"><% out.print(rs.getString("p1")); %></td>
-		<td class = "inp"><% out.print(rs.getInt("wickets")); %></td>
+		<td class = "p1">Strike Players</td>
 		</tr>
 		<%
-	}
-	
+		while(rs.next())
+		{
+	    %>
+		
+		<tr>
+		<td class = "f3"><% out.print(rs.getString("strike") + "*"); %></td>
+		</tr>
+		<%
+		}
+	 
 	 q = "Select dropdown1 as p1,SUM(RUN) as s from t1_score where cat='NO+RUN'OR CAT='RUNS' GROUP BY DROPDOWN1";
 	rs=stmt.executeQuery(q);
 	%>
@@ -104,6 +104,25 @@
 	</tr>
 	<%
 	}
+	
+	
+	q = "Select dropdown1 as p1,count(*) as wickets from t1_score where cat = 'WICKET' group by dropdown1";
+	rs = stmt.executeQuery(q);
+	%>
+	<tr>
+	<td class = "p1">WICKETS</td>
+	</tr>
+	<%
+	while(rs.next())
+	{
+	    %>
+		<tr>
+		<td class = "f3"><% out.print(rs.getString("p1")); %></td>
+		<td class = "inp"><% out.print(rs.getInt("wickets")); %></td>
+		</tr>
+		<%
+	}
+	
 	
 	q = "SELECT dropdown2 as b1,SUM(RUN) as s from t1_score where cat NOT IN('BYE','LEGBYE') GROUP BY DROPDOWN2";
 	rs=stmt.executeQuery(q);
@@ -124,7 +143,8 @@
 	}
 	q = "select dropdown2 as b1,count(*)/6 as s from t1_score where cat NOT  IN('WIDE','NO+RUNS','WIDE+BYES','No_BALL') GROUP BY DROPDOWN2";
 	  rs = stmt.executeQuery(q);
-	  %>
+	   
+ 	 %>
 	  <tr>
 	  <td class = "p1">Overs</td>
 	</tr>
@@ -134,7 +154,8 @@
 		%>
 		<tr>
 		<td class = "f3"><% out.print(rs.getString("b1")); %></td>
-		<td class = "inp"><% out.print(rs.getDouble("s")); %></td>
+		<td class = "inp"><% out.print(String.format("%.1f", rs.getDouble("s"))); %></td>
+		
 		</tr>
 	
 		<%		

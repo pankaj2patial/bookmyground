@@ -19,7 +19,7 @@ String pname=(String)session.getAttribute("pname");
 <font color = white size = "7">Cricket Score Bored</font>
 </marquee>
 	
-<img  src="cricket.png" width = "400px" height = "400px" align = "left">
+<img  src="cup.jpg" width = "400px" height = "400px" align = "left">
 
 <table width = "50%">
 

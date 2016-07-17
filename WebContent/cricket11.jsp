@@ -79,8 +79,6 @@
 		if(rs.getString(31).equalsIgnoreCase("1"))
 		{out.print("<td>"+rs.getString(16)+"</td>");}
 		
-		
-		
 		%>
 		
 		
